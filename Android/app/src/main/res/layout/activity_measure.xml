@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--  tools:ignore="MissingConstraints"란?  -->
+    <!--  ConstraintLayout에서 아래 자식 View가 위치하지 않아서 발생하는 오류 무시  -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/purple_j"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECG 측정"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_margin="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_progress" />
+
+    <TextView
+        android:id="@+id/start_timer"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text="3"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="@id/chart"
+        app:layout_constraintEnd_toEndOf="@id/chart"
+        app:layout_constraintTop_toTopOf="@id/chart"
+        app:layout_constraintBottom_toBottomOf="@id/chart"/>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chart"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_announce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timer"
+        android:textSize="20dp"
+        android:text="후에 측정이 완료됩니다."
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"/>
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/start"-->
+    <!--        style="?android:attr/borderlessButtonStyle"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        android:background="@drawable/bin_red"-->
+    <!--        android:onClick="OnClickBtnStart"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="20dp"-->
+    <!--        android:textStyle="bold|italic"-->
+    <!--        android:text="측정하기"/>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/end"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="150dp"-->
+    <!--        android:layout_toEndOf="@+id/start"-->
+    <!--        android:onClick="OnClickBtnEnd"-->
+    <!--        android:text="멈추기" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/save"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="50dp"-->
+    <!--        android:layout_toEndOf="@+id/start"-->
+    <!--        android:onClick="OnClickBtnSave"-->
+    <!--        android:text="저장하기" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

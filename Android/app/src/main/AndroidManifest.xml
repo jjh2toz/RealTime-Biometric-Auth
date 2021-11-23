@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kotlin_server_app">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    // 외부 저장소 권한
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kotlin_server_app"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
+        <activity android:name="Filepass"/>
+        <activity android:name="Newperson"/>
+        <activity android:name="ResultActivity"/>
+        <activity android:name="Logoutpage"/>
+        <activity android:name="Filepass_newuser"/>
+        <activity android:name="ResultfailActivity"/>
+        <activity android:name="BluetoothActivity"/>
+        <activity android:name="MeasureActivity"/>
+        <activity android:name="BluetoothActivity2"/>
+        <activity android:name="MeasureActivity2"/>
+        <activity android:name="Authfin"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog"/>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <service android:name=".SerialService"/>
+
+    </application>
+
+</manifest>

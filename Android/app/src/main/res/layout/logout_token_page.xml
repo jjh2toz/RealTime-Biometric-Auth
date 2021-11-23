@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="token logout"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/ccdongdong"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/token_pass"
+        android:fontFamily="@font/ccdongdong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bin_colors"
+        android:layout_marginTop="300dp"
+        android:text="LOGOUT"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/token_home"
+        android:fontFamily="@font/ccdongdong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bin_colors"
+        android:layout_marginTop="50dp"
+        android:text="Home"
+        android:textSize="30dp" />
+</LinearLayout>

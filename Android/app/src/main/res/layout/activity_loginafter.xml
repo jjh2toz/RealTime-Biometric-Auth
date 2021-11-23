@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fontFamily="@font/ccdongdong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/iv_authentication_gif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:id="@+id/loading_linear_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인증중...." />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/warning_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/warning_content"
+        android:layout_margin="10dp"
+        android:text="주의사항"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/warning_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/filepassbutton1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp"
+        android:text="심전도 측정 시 움직이지 마세요.\n전자기기와 멀리 떨어져서 측정을 진행하세요."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/filepassbutton1"
+        android:textColor="@color/white"
+        android:background="@drawable/bin_red"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:text="인증 진행"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

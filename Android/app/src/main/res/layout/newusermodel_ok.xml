@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ccdongdong"
+        android:text="새 사용자의 모델 저장 완료!"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ccdongdong"
+        android:text="  파일 페이지로 돌아가 다시    인증해주세요"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="30dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/filepage"
+        android:fontFamily="@font/ccdongdong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bin_colors"
+        android:layout_marginTop="100dp"
+        android:text="file-Page"
+        android:textSize="30dp" />
+
+</LinearLayout>

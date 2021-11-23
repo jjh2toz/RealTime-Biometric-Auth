@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fontFamily="@font/ccdongdong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/success_gif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/loading_linear_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/success_msg"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="성공"
+            android:textAlignment="center"
+            android:textColor="#03A9F4"
+            android:textSize="50dp"
+            android:shadowRadius="7.0"
+            android:shadowDx="7.0"
+            android:shadowDy="7.0"
+            android:shadowColor="#000000"
+            android:textStyle="italic|bold"
+            app:layout_constraintBottom_toTopOf="@+id/warning_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="@drawable/bin_red"
+        android:text="로그아웃"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/result_home2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loading_linear_a"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <Button
+        android:id="@+id/result_home"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bin_red"
+        android:text="home"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loading_linear_a" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

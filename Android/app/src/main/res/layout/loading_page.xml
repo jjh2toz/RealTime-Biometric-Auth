@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+
+
+    <TextView
+        android:id="@+id/viewsss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="인증하시겠습니까?"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="100dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/auth_button_no"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dp"
+            android:text="취소"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/auth_button_ok"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:text="확인"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</LinearLayout>
+

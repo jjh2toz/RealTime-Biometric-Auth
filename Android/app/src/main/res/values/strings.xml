@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kotlin_server_app</string>
+    <string name="btn_register"><u>등록하기</u></string>
+</resources>
