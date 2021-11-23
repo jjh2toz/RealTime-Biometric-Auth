@@ -41,6 +41,7 @@ class ResultActivity : AppCompatActivity() {
         var exit_message = AlertDialog.Builder(this@ResultActivity)
 
         val real_token = "Token "+user_token
+        val loginpage = Intent(this, MainActivity::class.java)
 
         logout_button.setOnClickListener {
             var retrofit = Retrofit.Builder()
@@ -59,9 +60,9 @@ class ResultActivity : AppCompatActivity() {
                         editor.clear()
                         editor.apply()
                         Toast.makeText(this@ResultActivity, "로그아웃 성공", Toast.LENGTH_SHORT).show()
+                        startActivity(loginpage) // 로그인 페이지로 이동함
                     }
                 }
-
                 override fun onFailure(call: Call<Logoutt>, t: Throwable) {
                     var dialog3 = AlertDialog.Builder(this@ResultActivity)
                     dialog3.setTitle("로그아웃")
